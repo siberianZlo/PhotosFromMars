@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos from Mars</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="text">
+        <h1>Снимки с Марса благодаря NASA API</h1>
+        <h2>Выберите необходимую дату и нажмите кнопку "Показать снимки"</h2>
+    </div>
+    <div class="push-container">
+        <input type="date" id="calendarDate" min="2016-01-01" value="2022-01-01">
+        <button id="pushRequest">Показать снимки</button>
+    </div>
+    <div class="hint-container"></div>
+    <div class="content">
+        <div class="wrap"></div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img-modal">
+    </div>
+
+    <script src="js/mars.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
